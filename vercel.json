@@ -1,22 +1,17 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "portfolio_backend/wsgi.py",
-      "use": "@vercel/python"
+  "functions": {
+    "portfolio_backend/wsgi.py": {
+      "runtime": "@vercel/python",
+      "memory": 1024,
+      "maxDuration": 10,
+      "regions": ["sin1"]
     }
-  ],
+  },
   "routes": [
     {
       "src": "/(.*)",
       "dest": "portfolio_backend/wsgi.py"
     }
-  ],
-  "functions": {
-    "portfolio_backend/wsgi.py": {
-      "memory": 1024,
-      "maxDuration": 10,
-      "regions": ["sin1"]
-    }
-  }
+  ]
 }
