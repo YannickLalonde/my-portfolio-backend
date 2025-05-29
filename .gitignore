@@ -1,0 +1,44 @@
+# Python compiled files
+*.pyc
+__pycache__/
+*.egg-info/
+.ipynb_checkpoints/ # Jupyter notebooks
+
+# Virtual environment (CRUCIAL!)
+venv/
+env/
+.venv/
+
+# Local database files (CRUCIAL!)
+db.sqlite3
+
+# Environment variables (CRUCIAL!)
+.env
+
+# Collected static files (CRUCIAL, as Vercel will handle this differently)
+staticfiles/
+
+# Media files (user-uploaded content, if stored locally)
+media/
+
+# Editor and OS-specific files
+.vscode/ # VS Code specific settings (if not shared)
+.idea/   # IntelliJ IDEA specific settings
+.DS_Store # macOS specific
+Thumbs.db # Windows specific
+*.swp     # Vim swap files
+*~        # Emacs backup files
+#*#       # Emacs auto-save files
+
+# Logs
+*.log
+
+# Test coverage reports
+htmlcov/
+.coverage
+
+# MyPy cache (for TypeScript-like type checking in Python)
+.mypy_cache/
+
+# Vercel specific cache
+.vercel/cache/
