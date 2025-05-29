@@ -4,8 +4,7 @@
     "portfolio_backend/wsgi.py": {
       "runtime": "@vercel/python",
       "memory": 1024,
-      "maxDuration": 10,
-      "regions": ["sin1"]
+      "maxDuration": 10
     }
   },
   "routes": [
@@ -13,5 +12,6 @@
       "src": "/(.*)",
       "dest": "portfolio_backend/wsgi.py"
     }
-  ]
+  ],
+  "regions": ["sin1"]
 }
