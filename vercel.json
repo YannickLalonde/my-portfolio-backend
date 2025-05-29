@@ -2,7 +2,7 @@
   "version": 2,
   "functions": {
     "api/wsgi.py": {
-      "runtime": "python3.12",
+      "runtime": "python@3.12",
       "memory": 1024,
       "maxDuration": 10
     }
