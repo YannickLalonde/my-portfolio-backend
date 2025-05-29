@@ -1,7 +1,7 @@
 {
   "version": 2,
   "functions": {
-    "portfolio_backend/wsgi.py": {
+    "api/wsgi.py": {
       "runtime": "@vercel/python@3.12.6",
       "memory": 1024,
       "maxDuration": 10
@@ -10,7 +10,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "portfolio_backend/wsgi.py"
+      "dest": "api/wsgi.py"
     }
   ],
   "regions": ["sin1"]
