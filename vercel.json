@@ -2,7 +2,7 @@
   "version": 2,
   "functions": {
     "portfolio_backend/wsgi.py": {
-      "runtime": "@vercel/python",
+      "runtime": "@vercel/python@3.9",
       "memory": 1024,
       "maxDuration": 10
     }
