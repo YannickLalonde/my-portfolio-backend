@@ -1,11 +1,4 @@
 {
-  "version": 2,
-  "functions": {
-    "api/wsgi.py": {
-      "memory": 1024,
-      "maxDuration": 10
-    }
-  },
   "routes": [
     {
       "src": "/(.*)",
